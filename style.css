@@ -1,0 +1,100 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	position: relative;
+	font-size: 16px;
+}
+
+h1 {
+	position: absolute;
+	top: 50px;
+	font-size: 3rem;
+	color: aliceblue;
+	letter-spacing: 1px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.box {
+	width: 300px;
+	height: 300px;
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-direction: column;
+}
+
+.circle {
+	width: 100px;
+	height: 100px;
+	background-color: black;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	order: 1;
+}
+
+.light {
+	height: 90px;
+	width: 90px;
+	background-color: aliceblue;
+	border-radius: 50%;
+}
+
+.line {
+	height: 150px;
+	width: 5px;
+	background-color: black;
+}
+
+.ceiling {
+	position: absolute;
+	height: 5px;
+	width: 100%;
+	background-color: black;
+	top: 50px;
+}
+
+.switcher {
+	position: absolute;
+	bottom: 50px;
+	padding: 20px 20px;
+	font-size: 1.5em;
+	color: aliceblue;
+	background: none;
+	border-radius: 8px;
+	border: solid 2px;
+}
+
+.yellow {
+	background-color: yellow;
+}
+
+.switcher:hover {
+	cursor: pointer;
+	background-color: beige;
+	color: #333;
+	transition: background-color 0.2s ease-in-out, color 0.2s;
+}
+
+@media (min-width: 600px) {
+	h1 {
+		font-size: 5em;
+	}
+
+	.switcher {
+		padding: 35px 55px;
+		font-size: 2em;
+	}
+}
